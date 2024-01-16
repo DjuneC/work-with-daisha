@@ -1,0 +1,225 @@
+/* font family that we are using */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: Poppins, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* font-family: Poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+
+:root {
+  --black: #353755;
+  --white: #fff;
+  --grey: #e0e4ee;
+  --cyan: #5bd3c7;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .header {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  box-shadow: 2px 2px 12px 2px rgb(238, 237, 237);
+  /* border-bottom: 1px solid #efefef; */
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.container .header .logo {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgb(242, 243, 255);
+  color: rgb(42, 58, 224);
+  /* background: rgb(102, 102, 255); */
+}
+
+.container .header .links {
+  width: 70%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .header .links .active {
+  /*background: var(--cyan);
+  background: linear-gradient(to right, #5bd3c7 21%, #558ecf 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  color: rgb(95, 98, 247);
+  color: #558ecf;
+}
+
+.container .header .links p {
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  font-size: 24px;
+}
+
+.container .header .links p:hover {
+  background: #efefef;
+}
+
+.container .header .search {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container .header .search .search-icon {
+  position: absolute;
+  left: 90px;
+  width: 23px;
+  height: 24px;
+  cursor: pointer;
+  background-color: var(--cyan);
+  background: rgb(152, 248, 189);
+  /* background: rgb(143, 255, 186); */
+
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 8;
+  color: #fff;
+
+  /* border-top-right-radius:0; */
+  /* border-bottom-right-radius: 0; */
+}
+
+.container .header .search .search-icon:hover {
+  background: rgb(3, 170, 170);
+}
+
+.container .header input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding-right: 120px; */
+  width: 280px;
+  border-radius: 6px;
+  border: 1px solid #efefef;
+  background-color: #efefef;
+  position: relative;
+  z-index: 3;
+
+  text-indent: 43px;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 20px; */
+}
+/* hero section */
+
+.hero-section {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* flex-direction: column; */
+  text-transform: uppercase;
+  /* padding-top: 90px; */
+}
+
+.cta-text {
+  width: 50%;
+}
+
+.cta-text h1 {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 5rem;
+  background: var(--cyan);
+  background: linear-gradient(to right, #5bd3c7 21%, #558ecf 71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-text button {
+  padding: 20px 50px;
+  /* font-weight: bold; */
+  font-size: 20px;
+  background-color: var(--cyan);
+  border: 1px solid var(--cyan);
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+}
+
+.cta-text button:hover {
+  border: 2px solid var(--cyan);
+  color: #000;
+  background-color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.cta-image {
+  width: 50%;
+  position: relative;
+  background-image: url("./img/blob-haikei.svg");
+  background-position: center center;
+  background-size: 82%;
+  overflow: visible;
+}
+
+.cta-image .chat-bubble {
+  width: 205px;
+  height: 205px;
+  margin-top: -30px;
+  border-radius: 35%;
+  border-bottom-right-radius: 0;
+  background: #efefef;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-style: italic;
+  text-transform: none;
+  font-size: 19px;
+  font-family: Poppins, "Courier New", Courier, monospace;
+  font-weight: 800;
+  padding: 6px;
+
+  margin-right: 20px;
+}
+
+.cta-image .chat-bubble .cta-image .cta-img {
+  border-bottom-right-radius: 250px;
+  width: 550px;
+
+  border-radius: 35%;
+  /* background: rgb(56, 56, 245); */
+  background: rgb(97, 231, 97);
+}
+
+.cta-image .cta-img {
+  border-bottom-right-radius: 250px;
+  border-bottom-left-radius: 250px;
+  margin-left: 45px;
+}
